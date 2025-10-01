@@ -1,0 +1,36 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>React Tutorial</title>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+
+  <!-- <script type="module" src="./User.js"></script>  
+  import User from './User.js';
+  But here, you can’t really use import/export between separate files unless you use a bundler (like Vite, Webpack, or Parcel). Babel standalone compiles JSX but doesn’t handle ES module imports properly out of the box. 
+  -->
+
+  <script type="text/babel">
+    const h1 = React.createElement('h1', { className: 'hello' }, 'Hello World');
+    const root = ReactDOM.createRoot(document.querySelector('#root'));
+    const h2 = <User />;
+    root.render(<User />);
+
+    console.log(root);
+  </script>
+</html>
