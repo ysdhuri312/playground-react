@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import Greeting from './components/Greeting';
 import ProductInfo from './components/ProductInfo';
 import UserList from './components/UserList';
+import Person from './components/Person';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Greeting />
       <ProductInfo />
       <UserList />
+      <Person name='Yogesh' age='31' />
       <Footer />
     </>
   );
