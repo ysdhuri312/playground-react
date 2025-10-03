@@ -7,6 +7,7 @@ import MainContent from './components/MainContent';
 import Footer from './components/Footer';
 import Greeting from './components/Greeting';
 import ProductInfo from './components/ProductInfo';
+import UserList from './components/UserList';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <MainContent />
       <Greeting />
       <ProductInfo />
+      <UserList />
       <Footer />
     </>
   );
