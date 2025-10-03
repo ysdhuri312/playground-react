@@ -9,6 +9,7 @@ import Greeting from './components/Greeting';
 import ProductInfo from './components/ProductInfo';
 import UserList from './components/UserList';
 import Person from './components/Person';
+import Button from './components/Button';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <ProductInfo />
       <UserList />
       <Person name='Yogesh' age='31' />
+      <Button>Hello</Button>
       <Footer />
     </>
   );
