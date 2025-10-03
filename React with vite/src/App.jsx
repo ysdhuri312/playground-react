@@ -10,6 +10,7 @@ import ProductInfo from './components/ProductInfo';
 import UserList from './components/UserList';
 import Person from './components/Person';
 import Button from './components/Button';
+import Counter from './hooks/Counter';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
       <UserList />
       <Person name='Yogesh' age='31' />
       <Button>Hello</Button>
+      <Counter />
       <Footer />
     </>
   );
