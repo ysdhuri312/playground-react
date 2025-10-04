@@ -14,6 +14,7 @@ import Counter from './hooks/Counter';
 import Switcher from './components/Switcher';
 import BasicEffect from './components/BasicEffect';
 import CounterEffect from './components/CounterEffect';
+import FetchData from './components/FetchData';
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
 
       <BasicEffect />
       <CounterEffect />
+      <FetchData />
     </>
   );
 };
