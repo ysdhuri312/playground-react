@@ -12,11 +12,13 @@ import Person from './components/Person';
 import Button from './components/Button';
 import Counter from './hooks/Counter';
 import Switcher from './components/Switcher';
+import BasicEffect from './components/BasicEffect';
+import CounterEffect from './components/CounterEffect';
 
 const App = () => {
   return (
     <>
-      <Header />
+      {/* <Header />
       <MainContent />
       <Greeting />
       <ProductInfo />
@@ -25,7 +27,10 @@ const App = () => {
       <Button>Hello</Button>
       <Counter />
       <Switcher />
-      <Footer />
+      <Footer /> */}
+
+      <BasicEffect />
+      <CounterEffect />
     </>
   );
 };
