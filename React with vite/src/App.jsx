@@ -11,6 +11,7 @@ import UserList from './components/UserList';
 import Person from './components/Person';
 import Button from './components/Button';
 import Counter from './hooks/Counter';
+import Switcher from './components/Switcher';
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
       <Person name='Yogesh' age='31' />
       <Button>Hello</Button>
       <Counter />
+      <Switcher />
       <Footer />
     </>
   );
