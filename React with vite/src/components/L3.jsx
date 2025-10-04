@@ -1,12 +1,16 @@
 /** @format */
 
-import React from 'react';
+import React, { useContext } from 'react';
+import { Name, Age } from '../App';
 
-function L3({ name }) {
+function L3() {
+  const userName = useContext(Name);
+  const userAge = useContext(Age);
+
   return (
-    <div style={{ border: '1px solid blue' }}>
-      <h1>From L3 {name}</h1>
-    </div>
+    <h1>
+      From L3 Username is {userName} and Age is {userAge}
+    </h1>
   );
 }
 

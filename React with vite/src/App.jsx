@@ -16,8 +16,14 @@ import BasicEffect from './components/BasicEffect';
 import CounterEffect from './components/CounterEffect';
 import FetchData from './components/FetchData';
 import L1 from './components/L1';
+import { createContext } from 'react';
+
+export const Name = createContext();
+export const Age = createContext();
 
 const App = () => {
+  const name = 'DHURI';
+  const age = 30;
   return (
     <>
       {/* <Header />
@@ -34,8 +40,11 @@ const App = () => {
       {/* <BasicEffect />
       <CounterEffect />
       <FetchData /> */}
-
-      <L1 name='DHURI' />
+      <Name.Provider value={name}>
+        <Age.Provider value={age}>
+          <L1 />
+        </Age.Provider>
+      </Name.Provider>
     </>
   );
 };
