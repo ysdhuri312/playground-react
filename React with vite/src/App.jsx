@@ -15,6 +15,7 @@ import Switcher from './components/Switcher';
 import BasicEffect from './components/BasicEffect';
 import CounterEffect from './components/CounterEffect';
 import FetchData from './components/FetchData';
+import L1 from './components/L1';
 
 const App = () => {
   return (
@@ -30,9 +31,11 @@ const App = () => {
       <Switcher />
       <Footer /> */}
 
-      <BasicEffect />
+      {/* <BasicEffect />
       <CounterEffect />
-      <FetchData />
+      <FetchData /> */}
+
+      <L1 name='DHURI' />
     </>
   );
 };
