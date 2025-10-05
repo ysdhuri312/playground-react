@@ -1,6 +1,7 @@
 /** @format */
 
 import './App.css';
+import CounterReducer from './components/CounterReducer';
 import UpdateUser from './components/UpdateUser';
 // import Header from './components/Header';
 // import MainContent from './components/MainContent';
@@ -16,15 +17,15 @@ import UpdateUser from './components/UpdateUser';
 // import CounterEffect from './components/CounterEffect';
 // import FetchData from './components/FetchData';
 // import L1 from './components/L1';
-import UserProfile from './components/UserProfile';
-import { UserProvider } from './context/userContext';
+// import UserProfile from './components/UserProfile';
+// import { UserProvider } from './context/UserContext';
 
 // export const Name = createContext();
 // export const Age = createContext();
 
 const App = () => {
-  const name = 'DHURI';
-  const age = 30;
+  // const name = 'DHURI';
+  // const age = 30;
   return (
     <>
       {/* <Header />
@@ -48,10 +49,12 @@ const App = () => {
         </Age.Provider>
       </Name.Provider> */}
 
-      <UserProvider>
+      {/* <UserProvider>
         <UserProfile />
         <UpdateUser />
-      </UserProvider>
+      </UserProvider> */}
+
+      <CounterReducer />
     </>
   );
 };
