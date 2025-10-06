@@ -4,6 +4,7 @@ import './App.css';
 import CounterHook from './components/CounterHook';
 import L1 from './components/L1';
 import Ref from './components/Ref';
+import Form from './components/Form';
 // import CounterReducer from './components/CounterReducer';
 // import UpdateUser from './components/UpdateUser';
 // import Header from './components/Header';
@@ -63,7 +64,9 @@ const App = () => {
 
       {/* <CounterHook /> */}
 
-      <L1 />
+      {/* <L1 /> */}
+
+      <Form />
     </>
   );
 };
