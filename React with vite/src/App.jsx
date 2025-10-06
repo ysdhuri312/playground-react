@@ -1,6 +1,7 @@
 /** @format */
 
 import './App.css';
+import CounterHook from './components/CounterHook';
 import Ref from './components/Ref';
 // import CounterReducer from './components/CounterReducer';
 // import UpdateUser from './components/UpdateUser';
@@ -57,7 +58,9 @@ const App = () => {
 
       {/* <CounterReducer /> */}
 
-      <Ref />
+      {/* <Ref /> */}
+
+      <CounterHook />
     </>
   );
 };

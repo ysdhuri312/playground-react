@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { useState } from 'react';
-import Button from '../components/Button';
+import Button from './Button';
 
 function Counter() {
   const [value, setValue] = useState(0);
