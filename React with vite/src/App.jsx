@@ -1,10 +1,11 @@
 /** @format */
 
 import './App.css';
-import CounterHook from './components/CounterHook';
-import L1 from './components/L1';
-import Ref from './components/Ref';
-import Form from './components/Form';
+// import CounterHook from './components/CounterHook';
+// import L1 from './components/L1';
+// import Ref from './components/Ref';
+// import Form from './components/Form';
+import UserForm from './components/UserForm';
 // import CounterReducer from './components/CounterReducer';
 // import UpdateUser from './components/UpdateUser';
 // import Header from './components/Header';
@@ -66,7 +67,8 @@ const App = () => {
 
       {/* <L1 /> */}
 
-      <Form />
+      {/* <Form /> */}
+      <UserForm />
     </>
   );
 };
