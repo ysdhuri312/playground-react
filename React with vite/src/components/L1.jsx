@@ -1,17 +1,18 @@
 /** @format */
 
-// /** @format */
+import React from 'react';
+import L2 from './L2';
 
-// import React from 'react';
-// import L2 from './L2';
+function L1() {
+  function fromL1(value) {
+    return value;
+  }
+  return (
+    <div style={{ border: '1px solid red' }}>
+      <h1>From L1 {name}</h1>
+      <L2 value={fromL1} />
+    </div>
+  );
+}
 
-// function L1() {
-//   return (
-//     <div style={{ border: '1px solid red' }}>
-//       <h1>From L1</h1>
-//       <L2 />
-//     </div>
-//   );
-// }
-
-// export default L1;
+export default L1;

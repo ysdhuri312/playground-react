@@ -2,6 +2,7 @@
 
 import './App.css';
 import CounterHook from './components/CounterHook';
+import L1 from './components/L1';
 import Ref from './components/Ref';
 // import CounterReducer from './components/CounterReducer';
 // import UpdateUser from './components/UpdateUser';
@@ -60,7 +61,9 @@ const App = () => {
 
       {/* <Ref /> */}
 
-      <CounterHook />
+      {/* <CounterHook /> */}
+
+      <L1 />
     </>
   );
 };
