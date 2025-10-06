@@ -1,8 +1,9 @@
 /** @format */
 
 import './App.css';
-import CounterReducer from './components/CounterReducer';
-import UpdateUser from './components/UpdateUser';
+import Ref from './components/Ref';
+// import CounterReducer from './components/CounterReducer';
+// import UpdateUser from './components/UpdateUser';
 // import Header from './components/Header';
 // import MainContent from './components/MainContent';
 // import Footer from './components/Footer';
@@ -54,7 +55,9 @@ const App = () => {
         <UpdateUser />
       </UserProvider> */}
 
-      <CounterReducer />
+      {/* <CounterReducer /> */}
+
+      <Ref />
     </>
   );
 };
