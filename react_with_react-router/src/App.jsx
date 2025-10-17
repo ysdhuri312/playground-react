@@ -1,29 +1,32 @@
 /** @format */
 
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Signin from './components/Signin';
 import Signup from './components/Signup';
 import Home from './pages/Home';
 import Archives from './pages/Archives';
 import About from './pages/About';
+import Layout from './Layout';
+import PageNotFound from './pages/PageNotFound';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Layout />,
+    children: [
+      { path: '/', index: true, element: <Home /> },
+      { path: '/signup', element: <Signup /> },
+      { path: '/signin', element: <Signin /> },
+      { path: '/archives', element: <Archives /> },
+      { path: '/about', element: <About /> },
+    ],
+  },
+  { path: '*', element: <PageNotFound /> },
+]);
 
 const App = () => {
-  return (
-    <>
-      <Router>
-        <Header />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/signup' element={<Signup />} />
-          <Route path='/signin' element={<Signin />} />
-          <Route path='/archives' element={<Archives />} />
-          <Route path='/about' element={<About />} />
-        </Routes>
-      </Router>
-    </>
-  );
+  return <RouterProvider router={router} />;
 };
 
 export default App;
