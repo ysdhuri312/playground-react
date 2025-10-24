@@ -1,6 +1,7 @@
 /** @format */
 
 import Button from './components/Button';
+import User from './components/User';
 
 const App = () => {
   const onClick = () => {
@@ -9,6 +10,7 @@ const App = () => {
   return (
     <div>
       <Button lable='Click Me' onClick={onClick} disabled={false} />
+      <User name='Yogesh dhuri' age={25} isStudent={false} />
     </div>
   );
 };
