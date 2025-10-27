@@ -2,6 +2,7 @@
 
 import Admin from './components/Admin';
 import Button from './components/Button';
+import Form from './components/Form';
 import State from './components/State';
 import User from './components/User';
 import type { AdminInfo } from './types';
@@ -23,10 +24,12 @@ const App = () => {
         disabled={true}
       />
       <User name='Yogesh dhuri' age={25} isStudent={false} />
-
+      <br />
       <Admin admin={admin} />
-
+      <br />
       <State />
+      <br />
+      <Form />
     </div>
   );
 };
