@@ -2,6 +2,7 @@
 
 import Admin from './components/Admin';
 import Button from './components/Button';
+import State from './components/State';
 import User from './components/User';
 import type { AdminInfo } from './types';
 
@@ -24,6 +25,8 @@ const App = () => {
       <User name='Yogesh dhuri' age={25} isStudent={false} />
 
       <Admin admin={admin} />
+
+      <State />
     </div>
   );
 };
