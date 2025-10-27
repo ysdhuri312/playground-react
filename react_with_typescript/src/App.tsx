@@ -9,7 +9,7 @@ const App = () => {
   };
   return (
     <div>
-      <Button lable='Click Me' onClick={onClick} disabled={false} />
+      <Button lable='Click Me' onClick={onClick} disabled={true} />
       <User name='Yogesh dhuri' age={25} isStudent={false} />
     </div>
   );
