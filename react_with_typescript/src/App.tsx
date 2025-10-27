@@ -2,6 +2,7 @@
 
 import Admin from './components/Admin';
 import Button from './components/Button';
+import Events from './components/Events';
 import Form from './components/Form';
 import State from './components/State';
 import User from './components/User';
@@ -30,6 +31,8 @@ const App = () => {
       <State />
       <br />
       <Form />
+      <br />
+      <Events />
     </div>
   );
 };
