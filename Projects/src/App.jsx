@@ -1,11 +1,13 @@
 /** @format */
 
-import Counter from './components/Counter';
+import Counter1 from './components/Counter1';
+import Counter2 from './components/Counter2';
 
 const App = () => {
   return (
     <div>
-      <Counter />
+      {/* <Counter1 /> */}
+      <Counter2 />
     </div>
   );
 };
