@@ -1,7 +1,8 @@
 /** @format */
 
 import { useState } from 'react';
-import FormValidation from './components/FormValidation';
+import ModernFormValidation from './components/ModernFormValidation';
+// import FormValidation from './components/FormValidation';
 // import { darkTheme, lightTheme } from './utils/theme';
 // // import Theme1 from './components/Theme1';
 // import Theme2 from './components/Theme2';
@@ -32,7 +33,8 @@ const App = () => {
       {/* <Theme1 themeChanger={themeChanger} theme={theme} /> */}
       {/* <Theme2 /> */}
       {/* </ThemeProvider> */}
-      <FormValidation />
+      {/* <FormValidation /> */}
+      <ModernFormValidation />
     </>
   );
 };
